@@ -1,3 +1,9 @@
 # Maintainable Bootstrap Customizations
 
 Credits to https://github.com/betaorbust/overstrap
+
+```
+npm install
+grunt
+cp dist/main.css [your-site]/css/bootstrap-custom.css
+```
