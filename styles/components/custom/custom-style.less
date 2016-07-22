@@ -1,25 +1,29 @@
 @import "../bootstrap/variables.less";
+@import "custom-variables.less";
 
 // Bootstrap overrides (cannot be customized by simple variables)
 
+.navbar {
+  margin-top: 10px;
+}
+
 .navbar .nav > li > a {
-	outline: none;
+  outline: none;
+  font-size: large;
 }
 
-.navbar .nav > li.active > a {
-	border-bottom: 3px solid @custom-petrol;
+.navbar .nav > li {
+  border-right: 1px @custom-light-grey solid;
 }
 
-.navbar-collapse.collapsing > ul > li > a {
-	font-size: @navbar-collapse-collapsing-font-size;
-	border-bottom: 0;
+.navbar .nav > li:last-child {
+  border-right: none;
 }
 
-.navbar-collapse.collapsing > ul > li.active > a {
-	border-bottom: 0;
+.navbar-collapse.collapsing > ul > li {
+  border: 0;
 }
 
-.navbar-collapse.collapse.in > ul > li > a {
-	font-size: @navbar-collapse-collapsing-font-size;
-	border-bottom: 0;
+.navbar-collapse.collapse.in > ul > li {
+  border: 0;
 }
